@@ -1,25 +1,26 @@
-# About This Book
+# Про цю книжку
 
-## License
+## Ліцензія
 
-The Little Go Book is licensed under the Attribution-NonCommercial-ShareAlike 4.0 International license. You should not have paid for this book.
+The Little Go Book ліцензована відповідно до Attribution-NonCommercial-ShareAlike 4.0 International license. You should not have paid for this book.
 
-You are free to copy, distribute, modify or display the book. However, I ask that you always attribute the book to me, Karl Seguin, and do not use it for commercial purposes.
+Ви можете вільно копіювати, розповсюджувати, редагувати та відображати цю книжку. However, I ask that you always attribute the book to me, Karl Seguin, and do not use it for commercial purposes.
 
 You can see the full text of the license at:
 
 <https://creativecommons.org/licenses/by-nc-sa/4.0/>
 
-## Latest Version
+## Найсвіжіша версія
 
-The latest source of this book is available at:
-<https://github.com/karlseguin/the-little-go-book>
+Найсвіжішу версию книжки можна скачати тут:
+<https://github.com/sergey-zhuravel/the-little-go-book>
 
-# Introduction
+# Введення
 
-I've always had a love-hate relationship when it comes to learning new languages. On the one hand, languages are so fundamental to what we do, that even small changes can have measurable impact. That *aha* moment when something clicks can have a lasting effect on how you program and can redefine your expectations of other languages. On the downside, language design is fairly incremental. Learning new keywords, type system, coding style as well as new libraries, communities and paradigms is a lot of work that seems hard to justify. Compared to everything else we have to learn, new languages often feel like a poor investment of our time.
+Я завжди мав двояке відношення до вивчення нової мови програмування. З однієї сторони мови програмування на стільки фундаментальні до того що ми робимо, що навіть маленькі зміни можуть мати значний вплив. 
+Той *ага* момент коли щось натиснуте  може мати довгий ефект на те як ти програмуєш та може перевизначити твої очікування від інших мов програмування. З іншої (гіршої?) сторони, дизайн мови програмування досить інкрементальний. Вивчення нових ключових слів, системи типів, стиль програмування, а також нові бібліотеки, комньюніті та парадігми - досить велика робота яку важко виправдати. Порівнюючи з усім іншим що ми повинні вивчити, вивчення нових мов програмування часто відчувається як погане інвестування нашого часу.
 
-That said, we *have* to move forward. We *have* to be willing to take incremental steps because, again, languages are the foundation of what we do. Though the changes are often incremental, they tend to have a wide scope and they impact productivity, readability, performance, testability, dependency management, error handling, documentation, profiling, communities, standard libraries, and so on. Is there a positive way to say *death by a thousand cuts*?
+Проте, ми *повинні* йти вперед. Ми *повинні* бути готові приймати поступові кроки тому що, знову таки, мови програмування є основою того що ми робимо. Though the changes are often incremental, they tend to have a wide scope and they impact productivity, readability, performance, testability, dependency management, error handling, documentation, profiling, communities, standard libraries, and so on. Is there a positive way to say *death by a thousand cuts*?
 
 That leaves us with an important question: **why Go?** For me, there are two compelling reasons. The first is that it's a relatively simple language with a relatively simple standard library. In a lot of ways, the incremental nature of Go is to simplify some of the complexity we've seen being added to languages over the last couple of decades. The other reason is that for many developers, it will complement your existing arsenal.
 
@@ -31,11 +32,12 @@ There are other areas where Go excels. For example, there are no dependencies wh
 
 Put plainly, learning Go is an efficient use of your time. You won't have to spend long hours learning or even mastering Go, and you'll end up with something practical from your effort.
 
-## A Note from the Author
+## Коментар від Автора
 
-I've hesitated writing this book for a couple reasons. The first is that Go's own documentation, in particular [Effective Go](https://golang.org/doc/effective_go.html), is solid.
+Я сумнівався чи писати цю книгу з декількох причин. Перша причина в тому, що Go має власну документацію, наприклад [Effective Go](https://golang.org/doc/effective_go.html) є фундаментальною працею.
 
-The other is my discomfort at writing a book about a language. When I wrote The Little MongoDB Book, it was safe to assume most readers understood the basics of relational database and modeling. With The Little Redis Book, you could assume a familiarity with a key value store and take it from there.
+Друга причина - мій дискомфорт в написанні книги про мову програмування. Коли я писав книгу The Little MongoDB, було безпечно припустити що більшічть читачів розуміють основи реляційних баз даних та моделювання. Пишучи The Little Redis Book, можна було допустити знайомство зі сховищем типу ключ значення і як його звідти отримати.
+ With The Little Redis Book, you could assume a familiarity with a key value store and take it from there.
 
 As I think about the paragraphs and chapters that lay ahead, I know that I won't be able to make those same assumptions. How much time do you spend talking about interfaces knowing that for some, the concept will be new, while others won't need much more than *Go has interfaces*? Ultimately, I take comfort in knowing that you'll let me know if some parts are too shallow or others too detailed. Consider that the price of this book.
 

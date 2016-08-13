@@ -25,6 +25,15 @@ en/go.mobi: en/go.epub
 
 all: en/go.pdf en/go.mobi
 
+ua/go.pdf:
+	cd ua && $(PDF_BUILDER) $(PDF_BUILDER_FLAGS) $(SOURCE_FILE_NAME) -o $(BOOK_FILE_NAME)_ua.pdf
+
+ua/go.epub: ua/title.png ua/title.txt ua/go.md
+	$(EPUB_BUILDER) $(EPUB_BUILDER_FLAGS) $^ -o $@
+
+ua/go.mobi: ua/go.epub
+	$(MOBI_BUILDER) $^
+
 clean:
 	rm -f */$(BOOK_FILE_NAME).pdf
 	rm -f */$(BOOK_FILE_NAME).epub

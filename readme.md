@@ -1,31 +1,35 @@
-## About ##
-[The Little Go Book](http://openmymind.net/The-Little-Go-Book/) is a free book introducing Go.
 
-The book was written by [Karl Seguin](http://openmymind.net), author of:
+## About ##
+Маленька книжка Go ([The Little Go Book](http://openmymind.net/The-Little-Go-Book/))   безкоштовна вступна книга Go.
+
+Автор книжки [Karl Seguin](http://openmymind.net), автор таких книжок:
 
 * [Scaling Viki](http://openmymind.net/scaling-viki/)
 * [The Little Redis Book](http://openmymind.net/2012/1/23/The-Little-Redis-Book/)
 * [The Little MongoDB Book](http://openmymind.net/2011/3/28/The-Little-MongoDB-Book/)
 * [Foundations of Programming](http://openmymind.net/FoundationsOfProgramming.pdf)
 
-## License ##
-The book is freely distributed under the  [Attribution-NonCommercial-ShareAlike 4.0 International](<http://creativecommons.org/licenses/by-nc-sa/4.0/>).
+Переклад в процесі.
 
-## Translations ##
+## Ліцензія ##
+Ця книжка вільно розповсюджується по ліцензії  [Attribution-NonCommercial-ShareAlike 4.0 International](<http://creativecommons.org/licenses/by-nc-sa/4.0/>).
+
+## Інші переклади ##
 
 * [Spanish](https://github.com/raulexposito/the-little-go-book/tree/master/es) by Raúl Expósito
 * [Chinese](https://github.com/songleo/the-little-go-book_ZH_CN) by [songleo](https://github.com/songleo)
 * [Vietnamese](https://github.com/quangnh89/the-little-go-book/blob/master/vi/readme.md) by [Quang Nguyễn](https://github.com/quangnh89)
 
-## Formats ##
-The book is written in [Markdown](http://daringfireball.net/projects/markdown/) and converted to PDF using [Pandoc](http://johnmacfarlane.net/pandoc/).
+## Формати ##
+Ця книжка написана в форматі [Markdown](http://daringfireball.net/projects/markdown/) і може бути конвертована в PDF користуючись [Pandoc](http://johnmacfarlane.net/pandoc/).
 
-The TeX template makes use of [Lena Herrmann's JavaScript highlighter](http://lenaherrmann.net/2010/05/20/javascript-syntax-highlighting-in-the-latex-listings-package).
+Темплейт TeX використовує [Lena Herrmann's JavaScript highlighter](http://lenaherrmann.net/2010/05/20/javascript-syntax-highlighting-in-the-latex-listings-package).
 
-Kindle and ePub format provided using [Pandoc](http://johnmacfarlane.net/pandoc/).
+Kindle і ePub формати можна зібрати з допомогою [Pandoc](http://johnmacfarlane.net/pandoc/).
 
 ## Generating books ##
 Packages listed below are for Ubuntu. If you use another OS or distribution names would be similar.
+Під час роботи з Windows Pandoc рекомендує встановлення MiKTeX. Після встановлення MiKTeX потребується синхронізація репозиторіїв щоб працювало встановлення пакетів.
 
 ### PDF
 
@@ -41,9 +45,9 @@ Packages:
 You should have [some fonts](https://github.com/karlseguin/the-little-redis-book/blob/master/common/pdf-template.tex#L11) installed too.
 Or you could change them to other ones if you want. Consider that fonts could cause [building troubles](https://github.com/karlseguin/the-little-redis-book/issues/26).
 
-#### Building
+#### Сбірка PDF
 
-Run `make en/go.pdf`.
+Run `make ua/go.pdf`.
 
 ### ePub
 
@@ -55,7 +59,7 @@ Packages:
 
 #### Building
 
-Run `make en/go.epub`.
+Run `make ua/go.epub`.
 
 ### Mobi
 
