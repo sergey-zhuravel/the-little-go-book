@@ -4,25 +4,26 @@
 
 The Little Go Book ліцензована відповідно до Attribution-NonCommercial-ShareAlike 4.0 International license. You should not have paid for this book.
 
-Ви можете вільно копіювати, розповсюджувати, редагувати та відображати цю книжку. However, I ask that you always attribute the book to me, Karl Seguin, and do not use it for commercial purposes.
+Ви можете вільно копіювати, розповсюджувати, редагувати та відображати цю книжку. Проте, я прошу вас завжди відносити цю книжку до мене, Karl Seguin, і не використовувати її у комерційних цілях.
 
-You can see the full text of the license at:
+Ви можете прочитати повний текст ліцензії за посиланням:
 
 <https://creativecommons.org/licenses/by-nc-sa/4.0/>
 
 ## Найсвіжіша версія
 
-Найсвіжішу версию книжки можна скачати тут:
+Найсвіжішу версию книжки з перекладом можна скачати тут:
 <https://github.com/sergey-zhuravel/the-little-go-book>
 
 # Введення
 
 Я завжди мав двояке відношення до вивчення нової мови програмування. З однієї сторони мови програмування на стільки фундаментальні до того що ми робимо, що навіть маленькі зміни можуть мати значний вплив. 
-Той *ага* момент коли щось натиснуте  може мати довгий ефект на те як ти програмуєш та може перевизначити твої очікування від інших мов програмування. З іншої (гіршої?) сторони, дизайн мови програмування досить інкрементальний. Вивчення нових ключових слів, системи типів, стиль програмування, а також нові бібліотеки, комньюніті та парадігми - досить велика робота яку важко виправдати. Порівнюючи з усім іншим що ми повинні вивчити, вивчення нових мов програмування часто відчувається як погане інвестування нашого часу.
+Той *ага* момент коли щось натиснуте  може мати довгий ефект на те як ти програмуєш та може перевизначити твої очікування від інших мов програмування. З іншої (гіршої?) сторони, дизайн мови програмування досить інкрементальний. Вивчення нових ключових слів, системи типів, стиль програмування, а також нові бібліотеки, ком’юніті та парадигми - досить велика робота яку важко виправдати. Порівнюючи з усім іншим що ми повинні вивчити, вивчення нових мов програмування часто відчувається як погане інвестування нашого часу.
 
-Проте, ми *повинні* йти вперед. Ми *повинні* бути готові приймати поступові кроки тому що, знову таки, мови програмування є основою того що ми робимо. Though the changes are often incremental, they tend to have a wide scope and they impact productivity, readability, performance, testability, dependency management, error handling, documentation, profiling, communities, standard libraries, and so on. Is there a positive way to say *death by a thousand cuts*?
+Проте, ми *повинні* йти вперед. Ми *повинні* бути готові приймати поступові кроки тому що, знову таки, мови програмування є основою того що ми робимо. І хоча зміни часто інкрементільні (зростаючі), вони, як правило, мають широку сферу застосування і вони впливають на продуктивність, читабельність, performance, тестування, 
+управління залежностями, обробку помилок, документацію, профілювання, ком’юніті, стандартні бібліотеки, і таке інше. Чи є позитивний спосіб сказати *смерть від тисячі порізів*?
 
-That leaves us with an important question: **why Go?** For me, there are two compelling reasons. The first is that it's a relatively simple language with a relatively simple standard library. In a lot of ways, the incremental nature of Go is to simplify some of the complexity we've seen being added to languages over the last couple of decades. The other reason is that for many developers, it will complement your existing arsenal.
+Це ставить нас перед дуже важливим питання: **чому Go?** Для мене є дві вагомі причини. По-перше, це відносно проста мова з відносно простою стандартною бібліотекою. In a lot of ways, the incremental nature of Go is to simplify some of the complexity we've seen being added to languages over the last couple of decades. The other reason is that for many developers, it will complement your existing arsenal.
 
 Go was built as a system language (e.g., operating systems, device drivers) and thus aimed at C and C++ developers. According to the Go team, and which is certainly true of me, application developers, not system developers, have become the primary Go users. Why? I can't speak authoritatively for system developers, but for those of us building websites, services, desktop applications and the like, it partially comes down to the emerging need for a class of systems that sit somewhere in between low-level system applications and higher-level applications.
 
@@ -37,15 +38,14 @@ Put plainly, learning Go is an efficient use of your time. You won't have to spe
 Я сумнівався чи писати цю книгу з декількох причин. Перша причина в тому, що Go має власну документацію, наприклад [Effective Go](https://golang.org/doc/effective_go.html) є фундаментальною працею.
 
 Друга причина - мій дискомфорт в написанні книги про мову програмування. Коли я писав книгу The Little MongoDB, було безпечно припустити що більшічть читачів розуміють основи реляційних баз даних та моделювання. Пишучи The Little Redis Book, можна було допустити знайомство зі сховищем типу ключ значення і як його звідти отримати.
- With The Little Redis Book, you could assume a familiarity with a key value store and take it from there.
 
 As I think about the paragraphs and chapters that lay ahead, I know that I won't be able to make those same assumptions. How much time do you spend talking about interfaces knowing that for some, the concept will be new, while others won't need much more than *Go has interfaces*? Ultimately, I take comfort in knowing that you'll let me know if some parts are too shallow or others too detailed. Consider that the price of this book.
 
-# Getting Started
+# Як почати
 
-If you're looking to play a little with Go, you should check out the [Go Playground](https://play.golang.org/) which lets you run code online without having to install anything. This is also the most common way to share Go code when seeking help in [Go's discussion forum](https://groups.google.com/forum/#!forum/golang-nuts) and places like StackOverflow.
+Якщо ви просто бажаєте погратися трохи з Go, тоді ви можете спробувати [Go Playground](https://play.golang.org/) що дозволяє запускати код онлайн без необхідності встановлювати що небуть. Це також найпоширеніший шлях поширити Go код коли шукаєте допомоги на [Go's discussion forum](https://groups.google.com/forum/#!forum/golang-nuts) або на StackOverflow.
 
-Installing Go is straightforward. You can install it from source, but I suggest you use one of the pre-compiled binaries. When you [go to the download page](https://golang.org/dl/), you'll see installers for various platforms. Let's avoid these and learn how to set up Go ourselves. As you'll see, it isn't hard.
+Інсталляція Go дуже проста. Ви можете встановити його з програмного коду, але я рекомендую використати один з вже зібраних бінарних файлів (істалляторів). Коли ви [перейдете до сторінки скачування](https://golang.org/dl/), то побачите інсталлятори для різних платформ. Але ми можемо обійтися і без них і встановити Go самі. Як ви зараз побачите - це не дуже важко.
 
 Except for simple examples, Go is designed to work when your code is inside a workspace. The workspace is a folder composed of `bin`, `pkg` and `src` subfolders. You might be tempted to force Go to follow your own style - don't.
 
@@ -73,24 +73,24 @@ You'll want to activate these variables. You can close and reopen your shell, or
 Type `go version` and you'll hopefully get an output that looks like `go version go1.3.3 darwin/amd64`.
 
 ## Windows
-Download the latest zip file. If you're on an x64 system, you'll want `go#.#.#.windows-amd64.zip`, where `#.#.#` is the latest version of Go.
+Скачайте найсвіжіший zip (зіп) файл. Якщо у вас x64 система, вам знадобиться `go#.#.#.windows-amd64.zip`, де `#.#.#` остання доступна версія Go.
 
-Unzip it at a location of your choosing. `c:\Go` is a good choice.
+Розпакуйте його у папку за вашим вибором. `c:\Go` добрий вибір.
 
-Set up two environment variables:
+Налаштуйте дві змінні системного серидовища:
 
   1. `GOPATH` points to your workspace. That might be something like `c:\users\goku\work\go`.
-  2. Add `c:\Go\bin` to your `PATH` environment variable.
+  2. Додайте `c:\Go\bin` до вашої `PATH` системної змінної.
 
-Environment variables can be set through the `Environment Variables` button on the `Advanced` tab of the `System` control panel. Some versions of Windows provide this control panel through the `Advanced System Settings` option inside the `System` control panel.
+Змінні системного середовища можуть бути встановлені через `Environment Variables` (змінні оточення) кнопку на `Advanced` закладці,  панелі керування `System`. Деякі версії Windows надають цю панель керування через `Advanced System Settings` опцію option всередині панелі управління `System`.
 
-Open a command prompt and type `go version`. You'll hopefully get an output that looks like `go version go1.3.3 windows/amd64`.
+Відкрийте командний рядок (консоль) і наберіть `go version`. Сподіваюся у результаті ви побачите щось на зразок `go version go1.3.3 windows/amd64`.
 
-# Chapter 1 - The Basics
+# Розділ 1 - Основи
 
-Go is a compiled, statically typed language with a C-like syntax and garbage collection. What does that mean?
+Go є компілюючою, статично типізованою мовою програмування з C-подібним синтаксисом і збірником сміття. Що це означає?
 
-## Compilation
+## Компіляція
 
 Compilation is the process of translating the source code that you write into a lower level language -- either assembly (as is the case with Go), or some other intermediary language (as with Java and C#).
 
